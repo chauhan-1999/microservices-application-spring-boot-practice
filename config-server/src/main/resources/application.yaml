@@ -1,0 +1,13 @@
+#by default my entire configuration from config server by default is git
+#by default it will assume that i will get the github/git link where i can go and get the configuration
+# there is another way to do that where u can add all the those configs within this config server
+#you can create diff yaml files and from this config server u can get all the details
+#we need to enable native profile within our app so that this will not go or demand git/githbub link
+#but it will just look up within the application itself
+
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: native  #by default it is git
